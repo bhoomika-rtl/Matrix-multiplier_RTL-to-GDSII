@@ -135,7 +135,6 @@ The following reports are included to document the synthesis and implementation 
 **Bhoomika P**
 
 M.Tech in VLSI and Nanotechnology
-
 Ramaiah University of Applied Sciences, Bengaluru
 
 ## License
