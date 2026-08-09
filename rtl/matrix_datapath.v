@@ -4,7 +4,6 @@ module matrix_datapath(
     input rst_n,
     input load,
     input compute,
-
     // Matrix A
     input signed [31:0] a11,a12,a13,
     input signed [31:0] a21,a22,a23,
@@ -30,7 +29,6 @@ reg signed [31:0] B11,B12,B13;
 reg signed [31:0] B21,B22,B23;
 reg signed [31:0] B31,B32,B33;
 
-
 // Sequential Logic
 always @(posedge clk or negedge rst_n)
 begin
@@ -55,7 +53,6 @@ begin
         // Load matrices
         if(load)
         begin
-
             A11<=a11; A12<=a12; A13<=a13;
             A21<=a21; A22<=a22; A23<=a23;
             A31<=a31; A32<=a32; A33<=a33;
@@ -64,7 +61,7 @@ begin
             B21<=b21; B22<=b22; B23<=b23;
             B31<=b31; B32<=b32; B33<=b33;
         end
-
+        
   //  Multiplication
         else if(compute)
         begin
