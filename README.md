@@ -45,7 +45,6 @@ The multiplication is performed in parallel, with each output element `Cij` obta
 ## RTL-to-GDSII Flow
 
 The complete implementation flow followed in this project is:
-
 ```text
 RTL Design
     ↓
@@ -66,7 +65,7 @@ Routing
 Physical Verification (DRC)
     ↓
 Timing, Power & Area Analysis
-
+```
 
 ## Implementation Results
 
