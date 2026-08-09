@@ -40,7 +40,7 @@ The design is organized into three main RTL blocks:
 
 The multiplication is performed in parallel, with each output element `Cij` obtained from the dot product of a row of matrix A and a column of matrix B.
 
-![Architecture](images/architecture.png)
+![Architecture](images/matrix_mult_architecture.png)
 
 ## RTL-to-GDSII Flow
 
