@@ -51,7 +51,7 @@ begin
     else
     begin
         // Load matrices
-        if(load)
+        if (load)
         begin
             A11<=a11; A12<=a12; A13<=a13;
             A21<=a21; A22<=a22; A23<=a23;
@@ -63,7 +63,7 @@ begin
         end
         
   //  Multiplication
-        else if(compute)
+        else if (compute)
         begin
             c11 <= (A11*B11) + (A12*B21) + (A13*B31);
             c12 <= (A11*B12) + (A12*B22) + (A13*B32);
