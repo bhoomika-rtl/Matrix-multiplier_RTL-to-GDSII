@@ -17,11 +17,9 @@ reg signed [31:0] b31,b32,b33;
 wire signed [65:0] c11,c12,c13;
 wire signed [65:0] c21,c22,c23;
 wire signed [65:0] c31,c32,c33;
-
 wire done;
 
 multi_top uut (
-
     .clk(clk),
     .rst_n(rst_n),
     .start(start),
@@ -37,15 +35,12 @@ multi_top uut (
     .c11(c11), .c12(c12), .c13(c13),
     .c21(c21), .c22(c22), .c23(c23),
     .c31(c31), .c32(c32), .c33(c33),
-
     .done(done)
-
 );
 
 always #5 clk = ~clk;
 
 initial begin
-
     clk = 0;
     rst_n = 0;
     start = 0;
@@ -68,7 +63,6 @@ initial begin
     $display("C11=%0d C12=%0d C13=%0d", c11,c12,c13);
     $display("C21=%0d C22=%0d C23=%0d", c21,c22,c23);
     $display("C31=%0d C32=%0d C33=%0d", c31,c32,c33);
-
     #20;
 
     a11=1; a12=1; a13=2;
@@ -87,7 +81,5 @@ initial begin
     $display("C21=%0d C22=%0d C23=%0d", c21,c22,c23);
     $display("C31=%0d C32=%0d C33=%0d", c31,c32,c33);
     $finish;
-
 end
-
 endmodule
