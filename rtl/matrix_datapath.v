@@ -1,9 +1,7 @@
 `timescale 1ns / 1ps
 module matrix_datapath(
-
     input clk,
     input rst_n,
-
     input load,
     input compute,
 
@@ -21,9 +19,7 @@ module matrix_datapath(
     output reg signed [65:0] c11,c12,c13,
     output reg signed [65:0] c21,c22,c23,
     output reg signed [65:0] c31,c32,c33
-
 );
-
 
 // Internal Registers
 reg signed [31:0] A11,A12,A13;
@@ -41,7 +37,6 @@ begin
 
     if(!rst_n)
     begin
-
         A11<=0; A12<=0; A13<=0;
         A21<=0; A22<=0; A23<=0;
         A31<=0; A32<=0; A33<=0;
@@ -53,13 +48,10 @@ begin
         c11<=0; c12<=0; c13<=0;
         c21<=0; c22<=0; c23<=0;
         c31<=0; c32<=0; c33<=0;
-
     end
 
     else
     begin
-
-      
         // Load matrices
         if(load)
         begin
@@ -71,14 +63,11 @@ begin
             B11<=b11; B12<=b12; B13<=b13;
             B21<=b21; B22<=b22; B23<=b23;
             B31<=b31; B32<=b32; B33<=b33;
-
         end
 
-        
   //  Multiplication
         else if(compute)
         begin
-
             c11 <= (A11*B11) + (A12*B21) + (A13*B31);
             c12 <= (A11*B12) + (A12*B22) + (A13*B32);
             c13 <= (A11*B13) + (A12*B23) + (A13*B33);
@@ -90,11 +79,7 @@ begin
             c31 <= (A31*B11) + (A32*B21) + (A33*B31);
             c32 <= (A31*B12) + (A32*B22) + (A33*B32);
             c33 <= (A31*B13) + (A32*B23) + (A33*B33);
-
         end
-
     end
-
 end
-
 endmodule
