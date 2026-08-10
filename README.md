@@ -8,8 +8,6 @@
 ![RTL](https://img.shields.io/badge/RTL-Verilog-informational)
 ![Synthesis](https://img.shields.io/badge/Synthesis-Cadence%20Genus-orange)
 ![Physical Design](https://img.shields.io/badge/Physical%20Design-Cadence%20Innovus-orange)
-![Clock](https://img.shields.io/badge/Clock-100MHz-success)
-![DRC](https://img.shields.io/badge/DRC%20Violations-0-success)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 </div>
