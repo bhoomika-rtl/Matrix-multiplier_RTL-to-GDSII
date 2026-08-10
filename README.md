@@ -6,6 +6,7 @@
 
 ![Technology](https://img.shields.io/badge/Technology-90nm-blue)
 ![RTL](https://img.shields.io/badge/RTL-Verilog-informational)
+![Functional Simulation](https://img.shields.io/badge/Functional%20Simulation-Cadence%20Incisive-informational)
 ![Synthesis](https://img.shields.io/badge/Synthesis-Cadence%20Genus-orange)
 ![Physical Design](https://img.shields.io/badge/Physical%20Design-Cadence%20Innovus-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
