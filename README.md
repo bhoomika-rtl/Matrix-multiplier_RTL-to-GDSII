@@ -35,11 +35,10 @@ The datapath uses parallel arithmetic computation, with **27 multiplications** a
 | Parameter | Details |
 |---|---|
 | Technology | 90 nm |
-| RTL Language | Verilog HDL |
+| HDL | Verilog |
+| Functional Simulation | Cadence Incisive |
 | Synthesis | Cadence Genus |
 | Physical Design | Cadence Innovus |
-| Functional Simulation | Cadence Incisive |
-| Clock Frequency | 100 MHz |
 
 > **Note:** Update the technology/library and other environment-specific paths in the Genus Tcl script, Innovus Tcl script and mmmc file to match your local setup before running the flow.
 
