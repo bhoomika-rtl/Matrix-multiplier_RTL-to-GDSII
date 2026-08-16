@@ -2,7 +2,7 @@
 
 # RTL-to-GDSII: 32-bit Matrix Multiplier of order 3×3
 
-**An RTL-to-GDSII implementation of a 3×3 matrix multiplier with signed 32-bit operands using Cadence Genus and Cadence Innovus in 90 nm technology.**
+**An RTL-to-GDSII implementation of a 3×3 matrix multiplier with signed 32-bit operands using Cadence Tools (90 nm technology node).**
 
 ![Technology](https://img.shields.io/badge/Technology-90nm-blue)
 ![RTL](https://img.shields.io/badge/RTL-Verilog-informational)
